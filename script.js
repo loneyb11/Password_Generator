@@ -8,9 +8,9 @@ function btnClick(){
     // prompt input number of characters type to use. 
 
     var length = prompt('Please choose number of characters in password from 8-18.');
-    var upper = confirm('Would you like uppercase letters?. Please click (OK) for Yes or (Cancel) for No.');
-    var lower = confirm('Would you like lowercase letters?  Please click (OK) for Yes or (Cancel) for No.');
-    var number = confirm('Would you like any numbers?  Please click (OK) for Yes or (Cancel) for No.');
+    var uppercase = confirm('Would you like uppercase letters?. Please click (OK) for Yes or (Cancel) for No.');
+    var lowercase = confirm('Would you like lowercase letters?  Please click (OK) for Yes or (Cancel) for No.');
+    var numbers = confirm('Would you like any numbers?  Please click (OK) for Yes or (Cancel) for No.');
     var special = confirm('Would you like any special characters? Please click (OK) for Yes or (Cancel) for No.');
     var typecount = 0;
     var letters = [];
@@ -22,13 +22,13 @@ function btnClick(){
 
     // type counts
 
-    if (upper === true) {
+    if (uppercase === true) {
         (typecount++);
     }
-    if (lower === true){          
+    if (lowercase === true){          
         typecount++;
     }
-    if (number === true) {        
+    if (numbers === true) {        
       typecount++;
     }
     if (special === true) {          
@@ -44,13 +44,13 @@ function btnClick(){
         console.log(length)
 
         // Character Generator Functions
-        function getRandomUpper(){
+        function getRandomUppercase(){
           return String.fromCharCode(Math.floor(Math.random()*26)+65);
         }
-        function getRandomLower(){
+        function getRandomLowercase(){
           return String.fromCharCode(Math.floor(Math.random()*26)+97);
         }
-        function getRandomNumber(){
+        function getRandomNumbers(){
           return String.fromCharCode(Math.floor(Math.random()*10)+48);
         }
 
@@ -65,13 +65,13 @@ function btnClick(){
         // Characters that will be used 
 
 
-        if (upper === true) {
+        if (uppercase === true) {
             charType.push(getRandomUpper());
         }
-        if (lower === true){
+        if (lowercase === true){
             charType.push(getRandomLower());
         }    
-        if (number === true) {
+        if (numbers === true) {
           charType.push(getRandomNumber());     
         }
         if (special === true) {  
