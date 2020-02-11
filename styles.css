@@ -1,0 +1,25 @@
+.container {
+    padding: 20px;
+    margin: 10px, 0px;
+    font-family: gilbert, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    background: #5ED8F3
+}
+
+.display {
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: normal;
+    border-style: double;
+    
+}
+
+.btn-success.btn {
+    color: #FFFFFF;
+    font-family: gilbert, sans-serif;
+    font-weight: 700;
+    background: #28A745;
+    padding: 6px, 12px;
+}
+
