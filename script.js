@@ -7,7 +7,7 @@ function btnClick(){
 
     // prompt input number of characters type to use. 
 
-    var length = prompt('Please choose number of characters in password from 8-18.');
+    var length = prompt('Please choose number of characters in password from 8-128.');
     var uppercase = confirm('Would you like uppercase letters?. Please click (OK) for Yes or (Cancel) for No.');
     var lowercase = confirm('Would you like lowercase letters?  Please click (OK) for Yes or (Cancel) for No.');
     var numbers = confirm('Would you like any numbers?  Please click (OK) for Yes or (Cancel) for No.');
